@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Élément racine -->
+  <xsd:element name="portfolio">
+    <xsd:complexType>
+      <xsd:sequence>
+
+        <!-- Langue active -->
+        <xsd:element name="langue">
+          <xsd:complexType>
+            <xsd:attribute name="active" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- INFOS -->
+        <xsd:element name="infos">
+          <xsd:complexType>
+            <xsd:sequence>
+
+              <xsd:element name="photo">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                      <xsd:attribute name="alt_fr" type="xsd:string" use="required"/>
+                      <xsd:attribute name="alt_en" type="xsd:string" use="required"/>
+                      <xsd:attribute name="alt_ar" type="xsd:string" use="required"/>
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+
+              <xsd:element name="presentation" type="multiLangGroup"/>
+              <xsd:element name="roles">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="role" type="langText" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="intro" type="multiLangGroup"/>
+              <xsd:element name="cv" type="langText" maxOccurs="unbounded"/>
+
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- TITRES -->
+        <xsd:element name="titres">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="video" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="education" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="experience" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="projects" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="technos" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="languages" type="langText" maxOccurs="unbounded"/>
+              <xsd:element name="menu">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="item" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="label" type="langText" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id" type="xsd:string" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- STATS -->
+        <xsd:element name="stats">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="item" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="valeur" type="xsd:string"/>
+                    <xsd:element name="libelle" type="langText" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- VIDÉO -->
+        <xsd:element name="video">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="lien" type="uriLangText" maxOccurs="unbounded"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- EDUCATION -->
+        <xsd:element name="education">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="item" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="periode" type="xsd:string"/>
+                    <xsd:element name="texte" type="langText" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- EXPERIENCE -->
+        <xsd:element name="experience">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="item" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="periode" type="xsd:string"/>
+                    <xsd:element name="poste" type="xsd:string"/>
+                    <xsd:element name="details" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="point" type="xsd:string" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="lang" type="xsd:string" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- PROJECTS -->
+        <xsd:element name="projects">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="item" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="nom" type="xsd:string"/>
+                    <xsd:element name="desc" type="langText" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- TECHNOS -->
+        <xsd:element name="technos">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="tech" type="xsd:string" maxOccurs="unbounded"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- LANGUAGES -->
+        <xsd:element name="languages">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="lang" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="nom" type="langText" maxOccurs="unbounded"/>
+                    <xsd:element name="niveau" type="langText" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="contact">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="email" type="langText" maxOccurs="1"/>
+              <xsd:element name="linkedin" type="langText" maxOccurs="1"/>
+              <xsd:element name="github" type="langText" maxOccurs="1"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- TYPES UTILISÉS -->
+  <xsd:complexType name="langText">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="lang" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="uriLangText">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:anyURI">
+        <xsd:attribute name="lang" type="xsd:string" use="required"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="multiLangGroup">
+    <xsd:sequence>
+      <xsd:element name="texte" type="langText" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

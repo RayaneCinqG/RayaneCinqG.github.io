@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ex="http://example.org/portfolio#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:cv="http://example.org/cv#">
+
+  <!-- Classes -->
+  <rdfs:Class rdf:about="ex:Personne"/>
+  <rdfs:Class rdf:about="ex:Langue"/>
+  <rdfs:Class rdf:about="ex:Technologie"/>
+  <rdfs:Class rdf:about="ex:Statistique"/>
+  <rdfs:Class rdf:about="ex:Formation"/>
+  <rdfs:Class rdf:about="ex:Expérience"/>
+  <rdfs:Class rdf:about="ex:Projet"/>
+  <rdfs:Class rdf:about="ex:Vidéo"/>
+
+  <!-- Propriétés liées à la personne -->
+  <rdf:Property rdf:about="ex:nom">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:role">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:présentation">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:cvLien">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:parle">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Langue"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:maîtrise">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Technologie"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:statistique">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Statistique"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:étudie">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Formation"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:travaille">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Expérience"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:réalise">
+    <rdfs:domain rdf:resource="ex:Personne"/>
+    <rdfs:range rdf:resource="ex:Projet"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Langue -->
+  <rdf:Property rdf:about="ex:niveau">
+    <rdfs:domain rdf:resource="ex:Langue"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Statistique -->
+  <rdf:Property rdf:about="ex:valeur">
+    <rdfs:domain rdf:resource="ex:Statistique"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:label">
+    <rdfs:domain rdf:resource="ex:Statistique"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Formation -->
+  <rdf:Property rdf:about="ex:établissement">
+    <rdfs:domain rdf:resource="ex:Formation"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:période">
+    <rdfs:domain rdf:resource="ex:Formation"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:niveau">
+    <rdfs:domain rdf:resource="ex:Formation"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Expérience -->
+  <rdf:Property rdf:about="ex:poste">
+    <rdfs:domain rdf:resource="ex:Expérience"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:entreprise">
+    <rdfs:domain rdf:resource="ex:Expérience"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:année">
+    <rdfs:domain rdf:resource="ex:Expérience"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:activité">
+    <rdfs:domain rdf:resource="ex:Expérience"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Projet -->
+  <rdf:Property rdf:about="ex:nom">
+    <rdfs:domain rdf:resource="ex:Projet"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:description">
+    <rdfs:domain rdf:resource="ex:Projet"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:tech">
+    <rdfs:domain rdf:resource="ex:Projet"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <!-- Propriétés : Vidéo -->
+  <rdf:Property rdf:about="ex:fr">
+    <rdfs:domain rdf:resource="ex:Vidéo"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:en">
+    <rdfs:domain rdf:resource="ex:Vidéo"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="ex:ar">
+    <rdfs:domain rdf:resource="ex:Vidéo"/>
+    <rdfs:range rdf:resource="rdfs:Literal"/>
+  </rdf:Property>
+
+</rdf:RDF>

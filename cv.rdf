@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ex="http://example.org/portfolio#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:cv="http://example.org/cv#">
+
+  <rdfs:isDefinedBy rdf:resource="cv.rdfs"/>
+
+  <!-- 👤 Profil -->
+  <rdf:Description rdf:about="ex:Rayane">
+    <rdf:type rdf:resource="foaf:Person"/>
+    <foaf:name>Rayane Senedjakedine</foaf:name>
+    <foaf:title>Développeur Full Stack</foaf:title>
+    <dc:description>Je conçois des expériences web modernes, sécurisées et performantes.</dc:description>
+    <foaf:homepage rdf:resource="https://tonsite.com/cv.pdf"/>
+    <cv:specialty>Web</cv:specialty>
+
+    <ex:parle rdf:resource="ex:Français"/>
+    <ex:parle rdf:resource="ex:Anglais"/>
+    <ex:parle rdf:resource="ex:Arabe"/>
+
+    <ex:maîtrise rdf:resource="ex:Docker"/>
+    <ex:maîtrise rdf:resource="ex:React"/>
+    <ex:maîtrise rdf:resource="ex:Rust"/>
+    <ex:maîtrise rdf:resource="ex:TypeScript"/>
+    <ex:maîtrise rdf:resource="ex:Python"/>
+    <ex:maîtrise rdf:resource="ex:Angular"/>
+    <ex:maîtrise rdf:resource="ex:HTML5"/>
+    <ex:maîtrise rdf:resource="ex:CSS3"/>
+    <ex:maîtrise rdf:resource="ex:PostgreSQL"/>
+    <ex:maîtrise rdf:resource="ex:NodeJS"/>
+
+    <ex:statistique rdf:resource="ex:Stat-Experience"/>
+    <ex:statistique rdf:resource="ex:Stat-Projets"/>
+    <ex:statistique rdf:resource="ex:Stat-Technos"/>
+    <ex:statistique rdf:resource="ex:Stat-Commits"/>
+
+    <ex:étudie rdf:resource="ex:Sorbonne"/>
+    <ex:étudie rdf:resource="ex:IUT"/>
+
+    <ex:travaille rdf:resource="ex:Exp-RATP"/>
+
+    <ex:réalise rdf:resource="ex:Projet-LySat"/>
+    <ex:réalise rdf:resource="ex:Projet-SuiviNommage"/>
+    <ex:réalise rdf:resource="ex:Projet-Airplay"/>
+  </rdf:Description>
+
+  <!-- 🗣️ Langues -->
+  <rdf:Description rdf:about="ex:Français">
+    <rdf:type rdf:resource="ex:Langue"/>
+    <ex:niveau>Langue maternelle</ex:niveau>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Anglais">
+    <rdf:type rdf:resource="ex:Langue"/>
+    <ex:niveau>Niveau C1</ex:niveau>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Arabe">
+    <rdf:type rdf:resource="ex:Langue"/>
+    <ex:niveau>Courant</ex:niveau>
+  </rdf:Description>
+
+  <!-- 📊 Statistiques -->
+  <rdf:Description rdf:about="ex:Stat-Experience">
+    <rdf:type rdf:resource="cv:Statistique"/>
+    <cv:valeur>2</cv:valeur>
+    <cv:label>Années d'expérience</cv:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Stat-Projets">
+    <rdf:type rdf:resource="cv:Statistique"/>
+    <cv:valeur>15+</cv:valeur>
+    <cv:label>Projets réalisés</cv:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Stat-Technos">
+    <rdf:type rdf:resource="cv:Statistique"/>
+    <cv:valeur>10</cv:valeur>
+    <cv:label>Technologies maîtrisées</cv:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Stat-Commits">
+    <rdf:type rdf:resource="cv:Statistique"/>
+    <cv:valeur>200+</cv:valeur>
+    <cv:label>Commits Git</cv:label>
+  </rdf:Description>
+
+  <!-- 🛠️ Technologies -->
+  <rdf:Description rdf:about="ex:Docker"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:React"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:Rust"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:TypeScript"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:Python"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:Angular"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:HTML5"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:CSS3"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:PostgreSQL"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+  <rdf:Description rdf:about="ex:NodeJS"><rdf:type rdf:resource="cv:Technologie"/></rdf:Description>
+
+  <!-- 🎓 Éducation -->
+  <rdf:Description rdf:about="ex:Sorbonne">
+    <rdf:type rdf:resource="cv:Formation"/>
+    <vcard:organization-name>Université Sorbonne Paris Nord</vcard:organization-name>
+    <cv:période>2023 – 2026</cv:période>
+    <cv:niveau>École d'ingénieur</cv:niveau>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:IUT">
+    <rdf:type rdf:resource="cv:Formation"/>
+    <vcard:organization-name>IUT Paris 13</vcard:organization-name>
+    <cv:période>2020 – 2023</cv:période>
+    <cv:niveau>Bachelor Informatique</cv:niveau>
+  </rdf:Description>
+
+  <!-- 💼 Expérience -->
+  <rdf:Description rdf:about="ex:Exp-RATP">
+    <rdf:type rdf:resource="cv:Expérience"/>
+    <cv:poste>Alternant Développeur Fullstack</cv:poste>
+    <vcard:organization-name>RATP</vcard:organization-name>
+    <cv:année>2024 – Aujourd’hui</cv:année>
+    <cv:activité>Développement d'applications internes (Next.js + PostgreSQL)</cv:activité>
+    <cv:activité>Implémentation CI/CD (GitHub Actions)</cv:activité>
+    <cv:activité>JWT Auth et sécurité backend</cv:activité>
+  </rdf:Description>
+
+  <!-- 🚀 Projets -->
+  <rdf:Description rdf:about="ex:Projet-LySat">
+    <rdf:type rdf:resource="cv:Projet"/>
+    <cv:nom>LySat</cv:nom>
+    <cv:description>App de recettes IA avec formats courts</cv:description>
+    <cv:tech>Next.js</cv:tech>
+    <cv:tech>FastAPI</cv:tech>
+    <cv:tech>Docker</cv:tech>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Projet-SuiviNommage">
+    <rdf:type rdf:resource="cv:Projet"/>
+    <cv:nom>Suivi Nommage</cv:nom>
+    <cv:description>App RATP pour gestion du référentiel technique</cv:description>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="ex:Projet-Airplay">
+    <rdf:type rdf:resource="cv:Projet"/>
+    <cv:nom>AirPlay Receiver</cv:nom>
+    <cv:description>App Windows en Rust pour recevoir AirPlay local</cv:description>
+  </rdf:Description>
+
+  <!-- 🎞️ Vidéos -->
+  <rdf:Description rdf:about="ex:VideoIntro">
+    <rdf:type rdf:resource="cv:Vidéo"/>
+    <cv:fr>https://www.youtube.com/embed/AXuhIwEz1qI</cv:fr>
+    <cv:en>https://www.youtube.com/embed/G5kzUpWAusI</cv:en>
+    <cv:ar>https://www.youtube.com/embed/kawqTT4Dp4E</cv:ar>
+  </rdf:Description>
+
+</rdf:RDF>

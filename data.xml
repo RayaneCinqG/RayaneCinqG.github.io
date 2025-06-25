@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="portfolio.xsd">
+  <langue active="fr"/>
+  <infos>
+
+    <photo alt_fr="Photo de Rayane" alt_en="Photo of Rayane" alt_ar="صورة ريان">rayane.png</photo>
+
+    <presentation>
+      <texte lang="fr">Bonjour je suis Rayane Senedjakedine</texte>
+      <texte lang="en">Hello I'm Rayane Senedjakedine</texte>
+      <texte lang="ar">مرحبا أنا ريان سنيجكدين</texte>
+    </presentation>
+
+    <roles>
+      <role lang="fr">Développeur Full Stack</role>
+      <role lang="en">Full Stack Developer</role>
+      <role lang="ar">مطور ويب متكامل</role>
+    </roles>
+
+    <intro>
+      <texte lang="fr">Je conçois des expériences web modernes, sécurisées et performantes.</texte>
+      <texte lang="en">I craft modern, secure, and high-performance web experiences.</texte>
+      <texte lang="ar">أقوم بإنشاء تجارب ويب حديثة وآمنة وعالية الأداء.</texte>
+    </intro>
+
+    <cv lang="fr" lien="cv_fr.pdf">Télécharger le CV</cv>
+    <cv lang="en" lien="cv_en.pdf">Download CV</cv>
+    <cv lang="ar" lien="cv_ar.pdf">تحميل السيرة الذاتية</cv>
+  </infos>
+
+  <titres>
+    <video lang="fr">Vidéo introductive</video>
+    <video lang="en">Introductive video</video>
+    <video lang="ar">فيديو تعريفي</video>
+
+    <education lang="fr">Parcours scolaire</education>
+    <education lang="en">Education</education>
+    <education lang="ar">المسار الدراسي</education>
+
+    <experience lang="fr">Expérience</experience>
+    <experience lang="en">Experience</experience>
+    <experience lang="ar">الخبرة</experience>
+
+    <projects lang="fr">Projets</projects>
+    <projects lang="en">Projects</projects>
+    <projects lang="ar">المشاريع</projects>
+
+    <technos lang="fr">Technologies maîtrisées</technos>
+    <technos lang="en">Technologies</technos>
+    <technos lang="ar">التقنيات المتقنة</technos>
+
+    <languages lang="fr">Langues parlées</languages>
+    <languages lang="en">Languages</languages>
+    <languages lang="ar">اللغات</languages>
+
+    <menu>
+      <item id="intro-video">
+        <label lang="fr">Vidéo</label>
+        <label lang="en">Video</label>
+        <label lang="ar">فيديو</label>
+      </item>
+      <item id="education">
+        <label lang="fr">Formation</label>
+        <label lang="en">Education</label>
+        <label lang="ar">الدراسة</label>
+      </item>
+      <item id="experience">
+        <label lang="fr">Expérience</label>
+        <label lang="en">Experience</label>
+        <label lang="ar">الخبرة</label>
+      </item>
+      <item id="projects">
+        <label lang="fr">Projets</label>
+        <label lang="en">Projects</label>
+        <label lang="ar">المشاريع</label>
+      </item>
+      <item id="technos">
+        <label lang="fr">Technos</label>
+        <label lang="en">Technos</label>
+        <label lang="ar">التقنيات</label>
+      </item>
+      <item id="languages">
+        <label lang="fr">Langues</label>
+        <label lang="en">Languages</label>
+        <label lang="ar">اللغات</label>
+      </item>
+    </menu>
+  </titres>
+
+
+
+  <stats>
+    <item><valeur>2</valeur>
+      <libelle lang="fr">Années d'expérience</libelle>
+      <libelle lang="en">Years of experience</libelle>
+      <libelle lang="ar">سنوات الخبرة</libelle>
+    </item>
+    <item><valeur>15+</valeur>
+      <libelle lang="fr">Projets réalisés</libelle>
+      <libelle lang="en">Projects completed</libelle>
+      <libelle lang="ar">مشاريع مكتملة</libelle>
+    </item>
+    <item><valeur>10</valeur>
+      <libelle lang="fr">Technos maîtrisées</libelle>
+      <libelle lang="en">Technologies mastered</libelle>
+      <libelle lang="ar">تقنيات متقنة</libelle>
+    </item>
+    <item><valeur>+50</valeur>
+      <libelle lang="fr">Commits Git</libelle>
+      <libelle lang="en">Git commits</libelle>
+      <libelle lang="ar">تعديلات Git</libelle>
+    </item>
+  </stats>
+
+  <video>
+    <lien lang="fr">https://www.youtube.com/embed/AXuhIwEz1qI</lien>
+    <lien lang="en">https://www.youtube.com/embed/G5kzUpWAusI</lien>
+    <lien lang="ar">https://www.youtube.com/embed/kawqTT4Dp4E</lien>
+  </video>
+
+  <education>
+    <item>
+      <periode>2023 – 2026</periode>
+      <texte lang="fr">École d'ingénieur – Université Sorbonne Paris Nord</texte>
+      <texte lang="en">Engineering School – Sorbonne Paris North</texte>
+      <texte lang="ar">مدرسة المهندسين – جامعة سوربون باريس نور</texte>
+    </item>
+    <item>
+      <periode>2020 – 2023</periode>
+      <texte lang="fr">Bachelor Informatique – IUT Paris 13</texte>
+      <texte lang="en">Computer Science Bachelor – IUT Paris 13</texte>
+      <texte lang="ar">بكالوريوس معلوماتية – معهد باريس 13</texte>
+    </item>
+  </education>
+
+  <experience>
+    <item>
+      <periode>2024 – Aujourd'hui</periode>
+      <poste lang="fr">RATP – Alternant Développeur Fullstack</poste>
+      <poste lang="en">RATP – Fullstack Developer Intern</poste>
+      <poste lang="ar">راتب – مطور ويب متكامل بالتناوب</poste>
+      <details lang="fr">
+        <point>Développement d'applications internes (Next.js + PostgreSQL)</point>
+        <point>Implémentation CI/CD (GitHub Actions)</point>
+        <point>JWT Auth Et sécurité backend</point>
+      </details>
+      <details lang="en">
+        <point>Internal apps development (Next.js + PostgreSQL)</point>
+        <point>CI/CD implementation (GitHub Actions)</point>
+        <point>JWT Auth And backend security</point>
+      </details>
+      <details lang="ar">
+        <point>تطوير تطبيقات داخلية (Next.js + PostgreSQL)</point>
+        <point>تنفيذ CI/CD (GitHub Actions)</point>
+        <point>توثيق JWT وأمان الخلفية</point>
+      </details>
+    </item>
+  </experience>
+
+  <projects>
+    <item>
+      <nom>LySat</nom>
+      <desc lang="fr">App de recettes IA avec formats courts (Next.js, FastAPI, Docker)</desc>
+      <desc lang="en">AI recipe app with short formats (Next.js, FastAPI, Docker)</desc>
+      <desc lang="ar">تطبيق وصفات مدعوم بالذكاء الاصطناعي (Next.js، FastAPI، Docker)</desc>
+    </item>
+    <item>
+      <nom>Suivi Nommage</nom>
+      <desc lang="fr">App RATP pour gestion du référentiel technique</desc>
+      <desc lang="en">RATP app to manage technical repository</desc>
+      <desc lang="ar">تطبيق RATP لإدارة المرجعية التقنية</desc>
+    </item>
+    <item>
+      <nom>AirPlay Receiver</nom>
+      <desc lang="fr">App Windows en Rust pour recevoir AirPlay local</desc>
+      <desc lang="en">Rust Windows app to receive local AirPlay</desc>
+      <desc lang="ar">تطبيق Windows بـ Rust لاستقبال AirPlay المحلي</desc>
+    </item>
+  </projects>
+
+  <technos>
+    <tech>angular</tech>
+    <tech>react</tech>
+    <tech>nodejs</tech>           
+    <tech>typescript</tech>
+    <tech>python</tech>
+    <tech>docker</tech>
+    <tech>postgresql</tech>
+    <tech>html5</tech>          
+    <tech>css3</tech>            
+    <tech>rust</tech>
+  </technos>
+
+  <languages>
+    <lang>
+      <nom lang="fr">Français</nom>
+      <nom lang="en">French</nom>
+      <nom lang="ar">الفرنسية</nom>
+      <niveau lang="fr">Langue maternelle</niveau>
+      <niveau lang="en">Native</niveau>
+      <niveau lang="ar">اللغة الأم</niveau>
+    </lang>
+    <lang>
+      <nom lang="fr">Anglais</nom>
+      <nom lang="en">English</nom>
+      <nom lang="ar">الإنجليزية</nom>
+      <niveau lang="fr">Niveau C1</niveau>
+      <niveau lang="en">C1 Level</niveau>
+      <niveau lang="ar">C1</niveau>
+    </lang>
+    <lang>
+      <nom lang="fr">Arabe</nom>
+      <nom lang="en">Arabic</nom>
+      <nom lang="ar">العربية</nom>
+      <niveau lang="fr">Courant</niveau>
+      <niveau lang="en">Fluent</niveau>
+      <niveau lang="ar">بطلاقة</niveau>
+    </lang>
+  </languages>
+
+  <contact>
+    <email>rayanesenedjakedine@gmail.com</email>
+    <linkedin>https://www.linkedin.com/in/rayanesendjakedine/</linkedin>
+    <github>https://github.com/RayaneCinqG</github>
+  </contact>
+</portfolio>
