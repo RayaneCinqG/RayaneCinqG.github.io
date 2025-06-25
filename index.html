@@ -1,1 +1,38 @@
-<h1>bonjour vous vous trouvez sur le portfolio de Rayane Sendjakedine.</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio - Rayane</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="loader.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Menu haut -->
+  <nav id="fixed-nav">
+    <h1>Rayane</h1>
+    <ul id="nav-menu">
+      <li><a href="#intro-video" data-id="intro-video">Vidéo</a></li>
+      <li><a href="#education" data-id="education">Formation</a></li>
+      <li><a href="#experience" data-id="experience">Expérience</a></li>
+      <li><a href="#projects" data-id="projects">Projets</a></li>
+      <li><a href="#technos" data-id="technos">Technos</a></li>
+      <li><a href="#languages" data-id="languages">Langues</a></li>
+    </ul>
+
+    <div class="switchers">
+      <button id="mode-toggle">☀️</button>
+      <select id="language-select">
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+        <option value="ar">AR</option>
+      </select>
+    </div>
+  </nav>
+  <!-- 📦 Contenu généré dynamiquement par XML + XSL -->
+  <div id="content"></div>
+
+</body>
+</html>
